@@ -1,0 +1,305 @@
+shirts.html
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="masteryassessment7" content="final assessment of javascript ability using fictional T-shirt vendor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Big L's Tees</title>
+
+        <!--- LINK TO EXTERNAL CSS ---->
+        <link rel="stylesheet" href="css/shirtstyles.css">
+
+        <!--- LINK TO GOOGLE FONTS ------>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Bakbak+One&family=Black+Ops+One&family=Bungee&family=Carter+One&family=Cinzel+Decorative&family=Island+Moments&family=Racing+Sans+One&family=Road+Rage&display=swap" 
+        rel="stylesheet">
+        
+        <style>
+        </style>
+    
+    </head>
+    <div class="duotoneSpools">
+    <nav>
+        <ul>
+            <li><a href="newPage.html">New Page</a></li>
+            <li><a href="newerPage.html">Newer Page</a></li>
+            <li><a href="newestPage.html">Newest Page</a></li>
+        </ul>
+    </nav>
+
+    <body>
+        <h1 style="margin-left: 50px;" class="hover">Big L's Tees</h1>
+        <div style="font-size: 30px; margin-left: 50px; display:flex; flex: 1;" class="hover">Whether POLYESTER, SILK, or just plain COTTON,</div>
+        <div style="font-size: 30px; margin-left: 50px; display: flex; flex: 1;" class="hover">Pick a SIZE, COLOR, QUANTITY, and tell us where to DROP IT!</div>
+    </div>
+    <div class="duotoneShirtRack">
+        <h3 class="hover">Welcome</h3>
+        <br>
+
+        <div class="directions parent" style="flex-direction: column; flex-wrap: wrap;
+        flex: 1 2 auto; justify-content: flex-start; align-items: left;">
+            <div class="hover child">Before You Begin...</div>
+            <div class="hover child">Step 1: All shirts are $20 by default, regardless of size</div>
+            <div class="hover child">Step 2: Check the box for size, select a color, and enter a quantity</div>
+            <div class="hover child">Step 3: Decide on a material</div>
+            <div class="hover child">Step 4: Check the Price Table to see the cost per shirt</div>
+            <div class="hover child">Step 5: Click 'Add To Cart' to see what you have ordered on the right (you can add several shirts of varying colors and quantities at once)</div>
+            <div class="hover child">Step 6: Click 'View Cart' button to keep track of what you have ordered</div>
+            <div class="hover child">Step 7: Enter your shipping information</div>
+            <div class="hover child">Step 8: Verify that all of your shipping and order details are correct before submitting</div>
+            <div class="hover child">Step 9: That's It!</div>
+        </div>
+        <br>
+        <!-- SPECIAL, BUY 2 Shirts, GET 1 FREE, BUY 3 shirts, get 2 FREE! Order more than $100, get free shipping-->
+        <h3 class="hover">Price Table</h3>
+    <div class="table">
+        <table class="priceTable">
+            <tr>
+            <div class="tableChild">
+            <th class="hover">Material</th>
+            <th class="hover">Multiplier</th>
+            <th class="hover">Price Per Shirt</th>
+            <div>
+            </tr>
+            <tr>
+            <div clas="tableChild">
+            <td class="hover">Cotton</td>
+            <td class="hover">x1</td>
+            <td class="hover">$20.00</td>
+            </div>
+            </tr>
+            <div class="tableChild">
+            <tr>
+            <td class="hover">Polyester</td>
+            <td class="hover">x1.25</td>
+            <td class="hover">$25.00</td>
+            </tr>
+            </div>
+            <div class="tableChild">
+            <tr>
+            <td class="hover">Silk</td>
+            <td class="hover">x2.5</td>
+            <td class="hover">$50.00</td>
+            </tr>
+            </div>
+        </table>
+        </div>
+        </div>
+        <div class="duotoneCart">
+            <!-- Overall form-->
+            <form id="orderForm" onsubmit="return false">
+                <h3 class="hover">Order Form</h3>
+                <div class="orderForm">
+                    <div class="orderFormLeft">
+                        <!-- Radio input for sizes, number input for quanity, and combo box for color-->
+                        <div class="hover" style="font-size: 36px;">Select Size</div>
+                        <div class="hover" style="font-size: 20px;">Note: To prevent accidental orders, item will not be added to cart until the 'size' box for that item is checked.</div>
+                        <br>
+                            <div class="smallOrder parent">
+                            <!-- Small input-->
+                                    <div class="child size">Small</div>
+                                    <div class="child">
+                                    <input type="checkbox" id="small" name="small" value="20">
+                                    </div>
+                                    <div class="child">
+                                    <select id="smallColor">
+                                        <option id="null" value="null">--Select a color</option>
+                                        <option id="black" value="black">Black</option>
+                                        <option id="white" value="white">White</option>
+                                        <option id="red" value="red">Red</option>
+                                        <option id="blue" value="blue">Blue</option>
+                                        <option id="brown" value="brown">Brown</option>
+                                        <option id="green" value="green">Green</option>
+                                        <option id="yellow" value="yellow">Yellow</option>
+                                        <option id="purple" value="purple">Purple</option>
+                                        <option id="pink" value="pink">Pink</option>
+                                        </select>
+                                    </select>
+                                    </div>
+                                    <div class="child">
+                                    <label for="numSmall"></label>
+                                    <input type="number" min="0" id="numSmall" name="numSmall" placeholder="quantity">
+                                    </div>
+                            </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div>
+                            <!-- Medium input -->
+                            <div class="mediumOrder parent">
+                                    <div class="child size">Medium</div>
+                                    <div class="child">
+                                    <input type="checkbox" id="medium" name="medium" value="20">
+                                    </div>
+                                    <div>
+                                    <select name="mediumColor" id="mediumColor">
+                                        <option value="">--Select a color</option>
+                                        <option value="black">Black</option>
+                                        <option value="white">White</option>
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="brown">Brown</option>
+                                        <option value="green">Green</option>
+                                        <option value="yellow">Yellow</option>
+                                        <option value="purple">Purple</option>
+                                        <option value="pink">Pink</option>
+                                        </select>
+                                    </div>
+                                    </select>
+                                    <div>
+                                    <label for="numMedium"></label>
+                                    <input type="number" min="0" id="numMedium" name="numMedium" placeholder="quantity">
+                                    </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <div>
+                            <!-- Large Input -->
+                            <div class="largeOrder parent">
+                                    <div class="child size">Large</div>
+                                    <div class="child">
+                                    <input type="checkbox" id="large" name="large" value="20">
+                                    </div>
+                                    <div class="child">
+                                    <select name="largeColor" id="largeColor">
+                                        <option value="">--Select a color</option>
+                                        <option value="black">Black</option>
+                                        <option value="white">White</option>
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="brown">Brown</option>
+                                        <option value="green">Green</option>
+                                        <option value="yellow">Yellow</option>
+                                        <option value="purple">Purple</option>
+                                        <option value="pink">Pink</option>
+                                        </select>
+                                    </select>
+                                    </div>
+                                    <div class="child">
+                                    <label for="numLarge"></label>
+                                    <input type="number" min="0" id="numLarge" name="numLarge" placeholder="quantity">
+                                    </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div>
+                        <!-- Radio input for price multiplier -->
+                                <div class="materialOrder parent">
+                                    <div style="font-size: 36px">Select Material</div>
+                                    <div class="child size">Cotton</div>
+                                    <span>
+                                    <input type="radio" id="cotton" name="material" value="1.00">
+                                    </span>
+                                    <div class="child size">Polyester</div>
+                                    <span>
+                                    <input type="radio" id="polyester" name="material" value="1.25">
+                                    </span>
+                                    <div class="child size">Silk</div>
+                                    <span>
+                                    <input type="radio" id="silk" name="material" value="2.5">
+                                    </span>
+                            </div>
+                        </div>
+            <br>
+                <div class="parent">
+                    <div class="child">
+                    <button type="button" id="addToCart" value="addToCart">Add to Cart</button>
+                    </div>
+                    <div class="child">
+                    <button type="button" id="viewCart" vallue="viewCart">View Cart</button>
+                    </div>
+                </div>
+            </div>
+                    <br>
+                    <br>
+                    <!-- Displaying items in cart and subtotal as customer shops-->
+                <div class="orderFormRight">
+                    <div>
+                    <div class="hover orderFormRightChild" style="font-size: 48px;" id="itemsAdded">Items In Cart:</div>
+                    </div>
+                    <div>
+                    <div class="hover orderFormRightChild" style="font-size: 30px;" id="itemsInCart">None</div>
+                    <div>
+                    <div class="hover orderFormRightChild" style="font-size: 48px;" id="totalSoFar">Total So Far:</div>
+                    </div>
+                    <div>
+                    <div class="hover orderFormRightChild" style="font-size: 100px;" id="calculatedSubtotal">$0.00</div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="shippingInformation duotoneCargoBoat">
+                <!-- Second part of form-->
+                        <h3 class="hover">Shipping Information</h3>
+                                <div class="shippingTable">
+
+                                    <div class="subsectionShipping">
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="firstName">First Name/Company Name</label>
+                                        <input type="text" id="firstName" name="firstName">
+                                        </div>
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="lastName">Last Name/ Company Dept.</label>
+                                        <input type="text" id="lastName" name="lastName">
+                                        </div>
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="address">Address</label>
+                                        <input type="text" id="address" name="address">
+                                        </div>
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="city">City</label>
+                                        <input type="text" id="city" name="city">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="subsectionShipping">
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="state">State</label>
+                                        <input type="text" id="state" name="state">
+                                        </div>
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="country">Country</label>
+                                        <input type="text" id="country" name="country">
+                                        </div>
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="zipCode">ZipCode</label>
+                                        <input type="text" id="zipCode" name="zipCode">
+                                        </div>
+                                        <div class="shippingTableChild">
+                                        <label class="hover" for="phone">Phone (Optional)</label>
+                                        <input type="tel" id="phone" name="phone">
+                                        </div>
+                                    </div>
+                                </div>
+                <!-- Button input -->
+                <div class="submitButtons buttons parent">
+                    <div class="child">
+                    <button type="submit" id="submitButton" value="submit">Sumbit</button>
+                    </div>
+                    <div class="child">
+                    <button type="reset" id="resetButton" value="cancel">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </form>
+    </div>
+    </body>
+    <!-- Script for order(s) -->
+    <script src="scripts/shirtOrder.js">
+    
+    // Reseetting fields in order form, had to be moved here due to type error from blank fields?
+    const resetFields = document.getElementById('resetOrder');
+    resetFields.addEventListener('click', () => {
+        orderForm.reset();
+});
+
+    </script>
+</html>

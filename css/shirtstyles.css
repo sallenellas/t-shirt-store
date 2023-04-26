@@ -1,0 +1,247 @@
+shirtstyles.css
+nav,ul, li, a {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: space-evenly;
+    justify-content: center;
+    gap: 50px;
+    font-family: 'Carter One', cursive;
+    font-size: 16px;
+    color: #84C4B7;
+    text-shadow: 1px 1px 2.5px rgb(47, 25, 0);
+    list-style: none;
+}
+
+.duotoneSpools{
+    background-image: url(/images/duotoneSpools.png);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    border-color:#44786E;
+    border-width: 2px;
+    border-style: outset;
+    padding: 15px;
+}
+
+.duotoneShirtRack{
+    background-image: url(/images/duotoneShirtRack.png);
+    image-rendering: crisp-edges;
+    display: flex;
+    flex-direction: column;
+    border-color:#44786E;
+    border-width: 2px;
+    border-style: outset;
+    padding: 50px;
+}
+
+.duotoneCart{
+    background-image: url(/images/duotoneCart.png);
+    display: flex;
+    flex-direction: column;
+    border-color:#44786E;
+    border-width: 2px;
+    border-style: outset;
+    padding: 50px;
+}
+
+.duotoneCargoBoat{
+    background-image: url(/images/duotoneCargoBoat.png);
+    display: flex;
+    flex-direction: column;
+    border-color:#44786E;
+    border-width: 2px;
+    border-style: outset;
+    padding: 50px;
+}
+
+h1 {
+    font-family: 'Carter One', cursive;
+    font-size: 36px;
+    color: #84C4B7;
+    text-shadow: 1px 1px 2.5px rgb(47, 25, 0);  
+}
+
+body{
+    background:#2E8F5E;
+}
+
+h3{
+    font-family: 'Carter One', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: #84C4B7;
+    text-shadow: 1px 1px 5px rgb(47, 25, 0);
+}
+
+div{
+    font-family: 'Road Rage', cursive;
+    color: #84C4B7;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+input, select, option {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    background: #C4FFF3;
+    color: #44786E;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    justify-content: center;
+    flex: 1 2 auto;
+}
+
+.tableChild{
+    display: flex;
+}
+
+table, th, tr, td{
+    font-family: 'Road Rage', cursive;
+    gap: 25px;
+    font-size: 48px;
+    min-width: 250px;
+}
+
+td {
+    text-align: center;
+}
+
+.directions {
+    font-family: 'Road Rage', cursive;
+    font-size: 36px;
+    border-radius: 5px;
+}
+
+.shippingInformation, input, select, option{
+    font-family: 'Road Rage', cursive;
+    font-size: 24px;
+    color: #84C4B7;
+    padding: 5px;
+}
+
+.shippingTable {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+
+button {
+    font-family: 'Carter One', cursive;
+    background: #C4FFF3;
+    color: #44786E;
+    padding: 7.5px;
+    min-width: 100px;
+    border-radius: 12px;
+    box-shadow: 2px 1px 5px rgb(0, 0, 0);
+}
+
+.size {
+    font-size: 24px;
+    color: #84C4B7;
+    text-shadow: 1px 1px 5px rgb(47, 25, 0);
+}
+
+.parent{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.child {
+    display: flex;
+}
+
+.orderForm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.orderFormLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 75px;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.orderFormRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 50px;
+    gap: 20px;
+}
+
+.orderFormRightChild{
+    display: flex;
+}
+
+#itemsInCart{
+    white-space: pre-wrap;
+}
+
+.shippingInformation > input{
+    min-width: 500px;
+}
+
+.subsectionShipping{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+.submitButtons{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin: 40px;
+    margin-right: 80px;
+    padding: 10px;
+}
+
+button:hover{
+    color: #915358;
+    background:#C49584;
+}
+
+button:active{
+    color: #C49584;
+    background:#44786E;
+}
+
+.hover:hover{
+    color: #915358;
+}
+
+a:hover{
+    color: #915358;
+}
+
+a:active{
+    color: #C49584;
+}
+
+a:visited{
+    color: #44786E;
+}
